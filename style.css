@@ -1,0 +1,1190 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+/* animation */
+#animation-slide-up{
+    animation: slide_up 2s ease-out;
+}
+@keyframes slide_up{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(-150px);
+    }
+}
+
+#logo-up{
+    position: absolute;
+    top: 0;
+    animation: slide_up_logo 4s ease;
+}
+@keyframes slide_up_logo{
+    0%{
+        transform: translateY(560px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#page-header-content{
+    animation: slide_up_content 3s ease;
+
+}
+@keyframes slide_up_content{
+    from{
+        transform: translateY(360px);
+        opacity: 0.3;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#newsletter-panel-up{
+    animation: slide_up_newsletter 3s ease;
+}
+@keyframes slide_up_newsletter{
+    0%{
+        transform: translateY(-10px);
+        opacity: 0.2;
+    }
+    50%{
+        transform: translateY(-50px);
+        opacity: 0.6;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#newsletter-panel-down{
+    animation: slide_down_newsletter 3s ease;
+}
+
+@keyframes slide_down_newsletter{
+    0%{
+        transform: translateY(0px);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(400px);
+        opacity: 1;
+    }
+}
+/* animation */
+
+@media only screen and (max-width:319px){
+    .root-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* notification panel */
+    .notification-panel{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12.4px;
+        padding: 15px;
+        background-color: #e5e5e5;
+        position: fixed;
+        top: 0;
+    }
+    .notification-panel p{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .notification-panel a{
+        text-decoration: none;
+        color: #007bc1;
+        font-weight: bold;
+    }
+    .notification-panel button{
+        border: none;
+        background-color:  #007bc1;
+        color: #e5e5e5;
+        padding: 6px 12px 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    /* end notification panel */
+
+
+    /* page header & hero shot */
+    .pageHeader-heroShot{
+        height: 100%;
+        background-color: #004a75;
+        background-image: url("./assets/work-desk__dustin-lee.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding-top: 7rem;
+        margin-top: auto;
+    }
+    .pageHeader-heroShot img{
+        width: 50px;
+        margin-top: 20px;
+    }
+    .container-content-pageHeader-heroShot{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 88%;
+    }
+    .container-content-pageHeader-heroShot button{
+        border: 2px solid white;
+        background-color: transparent;
+        color: wheat;
+        padding: 18px 26px 18px 26px;
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .container-content-pageHeader-heroShot button:hover{
+        border: 2px solid white;
+        background-color: white;
+        color: rgb(54, 54, 227);
+        padding: 18px 26px 18px 26px;
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+        
+    }
+    .container-content-pageHeader-heroShot .text{
+        padding: 60px 0 100px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .container-content-pageHeader-heroShot .text .text-content{
+        margin-top: 0px;
+    }
+    .container-content-pageHeader-heroShot .text h1{
+        font-weight: 500;
+        text-decoration: solid;
+        color: white;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-content-pageHeader-heroShot .text h3{
+        font-weight: bolder;
+        margin: 0;
+        font-size: 25px;
+        text-decoration: solid;
+    }
+    .container-content-pageHeader-heroShot .text div{
+        margin-top: 15px;
+    }
+    .container-content-pageHeader-heroShot .text div p{
+        margin: 0;
+        margin-top: 3px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    /* end page header & hero shot */
+
+
+    /* highlights-panel */
+    .highlights-panel{
+        padding: 15px;
+        background-color: #e5e5e5;
+        color: rgb(52, 37, 2); 
+    }
+    .container-highlights-panel-top{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .container-highlights-panel-top h1{
+        font-weight: 600;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-highlights-panel-top p{
+        margin-top: 15px;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .container-highlights-panel-bottom{
+        padding: 10px 23px 60px 23px;
+    }
+    .container-highlights-panel-bottom h3{
+        margin: 0;
+        margin-bottom: 0px;
+    }
+    .container-highlights-panel-bottom img{
+        margin-bottom: 20px;
+    }
+    .content-highlights-panel{
+        border: 0.5px solid grey;
+        padding: 16px 23px 16px 23px;
+        margin-top: 27px;
+    }
+    .content-highlights-panel p{
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .content-highlights-panel div{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .content-highlights-panel div img{
+        width: 14%;
+    }
+    /* end highlights-panel */
+
+
+    /* page footer */
+    .page-footer{
+        background-color: #004a75;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        padding: 30px 20px 30px 20px;
+        opacity: 0.9;
+    }
+    .page-footer img{
+        width: 5%;
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+    }
+    /* end page footer */
+
+
+    /* image */
+    .content-highlights-panel .evolve{
+        width: 11%;
+    }
+    /* image */
+
+    .br-960px{
+        display: none;
+    }
+    .notification-panel-br-960px{
+        display: none;
+    }
+
+    /* newsletter-panel */
+    .newsletter-panel{
+        position: absolute;
+        bottom: 0;
+        background-color: #2a8bc3;
+        color: white;
+        padding: 20px;
+        z-index: 1;
+        opacity: 0.9;
+        height: auto;
+        visibility: hidden;
+    }
+    .newsletter-panel .newsletter-panel-content{
+        z-index: 10;
+    }
+    .newsletter-panel .newsletter-panel-content h1{
+        font-size: 27px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .newsletter-panel .newsletter-panel-content p{
+        margin-top: 6px;
+    }
+    .newsletter-panel .input-box{
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-panel .input-box .input-value{
+        padding: 6px;
+        margin-bottom: 14px;
+        opacity: 1;
+    }
+    .newsletter-panel .input-box .button{
+        padding: 6px;
+        color: white;
+        background-color: rgb(243, 166, 11);
+        border: none;
+        font-weight: 600;
+        opacity: 1;
+        text-align: center;
+        cursor: pointer;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(154, 153, 153);
+        font-weight: 600;
+        opacity: 1; /* Firefox */
+      }
+    .newsletter-panel .logo-close{
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        cursor: pointer;
+    }
+    /* end newsletter panel */
+}
+
+
+@media only screen and (min-width:320px){
+    .root-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* notification panel */
+    .notification-panel{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12.4px;
+        padding: 15px;
+        background-color: #e5e5e5;
+        position: fixed;
+        top: 0;
+    }
+    .notification-panel p{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .notification-panel a{
+        text-decoration: none;
+        color: #007bc1;
+        font-weight: bold;
+    }
+    .notification-panel button{
+        border: none;
+        background-color:  #007bc1;
+        color: #e5e5e5;
+        padding: 6px 12px 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    /* end notification panel */
+
+
+    /* page header & hero shot */
+    .pageHeader-heroShot{
+        height: 100%;
+        background-color: #004a75;
+        background-image: url("./assets/work-desk__dustin-lee.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding-top: 7rem;
+        margin-top: auto;
+    }
+    .pageHeader-heroShot img{
+        width: 50px;
+        margin-top: 20px;
+    }
+    .container-content-pageHeader-heroShot{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 88%;
+    }
+    .container-content-pageHeader-heroShot button{
+        border: 2px solid white;
+        background-color: transparent;
+        color: wheat;
+        padding: 18px 26px 18px 26px;
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .container-content-pageHeader-heroShot button:hover{
+        border: 2px solid white;
+        background-color: white;
+        color: rgb(54, 54, 227);
+        padding: 18px 26px 18px 26px;
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+        
+    }
+    .container-content-pageHeader-heroShot .text{
+        padding: 60px 0 100px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .container-content-pageHeader-heroShot .text .text-content{
+        margin-top: 0px;
+    }
+    .container-content-pageHeader-heroShot .text h1{
+        font-weight: 500;
+        text-decoration: solid;
+        color: white;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-content-pageHeader-heroShot .text h3{
+        font-weight: bolder;
+        margin: 0;
+        font-size: 25px;
+        text-decoration: solid;
+    }
+    .container-content-pageHeader-heroShot .text div{
+        margin-top: 15px;
+    }
+    .container-content-pageHeader-heroShot .text div p{
+        margin: 0;
+        margin-top: 3px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    /* end page header & hero shot */
+
+
+    /* highlights-panel */
+    .highlights-panel{
+        padding: 15px;
+        background-color: #e5e5e5;
+        color: rgb(52, 37, 2); 
+    }
+    .container-highlights-panel-top{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .container-highlights-panel-top h1{
+        font-weight: 600;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-highlights-panel-top p{
+        margin-top: 15px;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .container-highlights-panel-bottom{
+        padding: 10px 23px 60px 23px;
+    }
+    .container-highlights-panel-bottom h3{
+        margin: 0;
+        margin-bottom: 0px;
+    }
+    .container-highlights-panel-bottom img{
+        margin-bottom: 20px;
+    }
+    .content-highlights-panel{
+        border: 0.5px solid grey;
+        padding: 16px 23px 16px 23px;
+        margin-top: 27px;
+    }
+    .content-highlights-panel p{
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .content-highlights-panel div{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .content-highlights-panel div img{
+        width: 14%;
+    }
+    /* end highlights-panel */
+
+
+    /* page footer */
+    .page-footer{
+        background-color: #004a75;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        padding: 30px 20px 30px 20px;
+        opacity: 0.9;
+    }
+    .page-footer img{
+        width: 5%;
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+    }
+    /* end page footer */
+
+
+    /* image */
+    .content-highlights-panel .evolve{
+        width: 11%;
+    }
+    /* image */
+
+    .br-960px{
+        display: none;
+    }
+    .notification-panel-br-960px{
+        display: none;
+    }
+
+    /* newsletter-panel */
+    .newsletter-panel{
+        position: absolute;
+        bottom: 0;
+        background-color: #2a8bc3;
+        color: white;
+        padding: 20px;
+        z-index: 1;
+        opacity: 0.9;
+        height: auto;
+        visibility: hidden;
+    }
+    .newsletter-panel .newsletter-panel-content{
+        z-index: 10;
+    }
+    .newsletter-panel .newsletter-panel-content h1{
+        font-size: 27px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .newsletter-panel .newsletter-panel-content p{
+        margin-top: 6px;
+    }
+    .newsletter-panel .input-box{
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-panel .input-box .input-value{
+        padding: 6px;
+        margin-bottom: 14px;
+        opacity: 1;
+    }
+    .newsletter-panel .input-box .button{
+        padding: 6px;
+        color: white;
+        background-color: rgb(243, 166, 11);
+        border: none;
+        font-weight: 600;
+        opacity: 1;
+        text-align: center;
+        cursor: pointer;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(154, 153, 153);
+        font-weight: 600;
+        opacity: 1; /* Firefox */
+      }
+    .newsletter-panel .logo-close{
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        cursor: pointer;
+    }
+    /* end newsletter panel */
+}
+
+
+
+@media only screen and (min-width:481px){
+    .root-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* notification panel */
+    .notification-panel{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12.4px;
+        padding: 15px;
+        background-color: #e5e5e5;
+        width: 100%;
+        height: auto;
+    }
+    .notification-panel p{
+        margin: 0;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .notification-panel button{
+        border: none;
+        background-color:  #007bc1;
+        color: #e5e5e5;
+        padding: 6px 12px 6px 12px;
+        border-radius: 4px;
+    }
+    /* end notification panel */
+
+
+    /* page header & hero shot */
+    .pageHeader-heroShot{
+        height: 100%;
+        background-color: #004a75;
+        background-image: url("./assets/work-desk__dustin-lee.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding-top: 7rem;
+        margin-top: auto;
+    }
+    .pageHeader-heroShot img{
+        width: 50px;
+        margin-top: 20px;
+    }
+    .container-content-pageHeader-heroShot{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 88%;
+    }
+    .container-content-pageHeader-heroShot button{
+        border: 2px solid white;
+        background-color: transparent;
+        color: wheat;
+        padding: 18px 26px 18px 26px;
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+    .container-content-pageHeader-heroShot .text{
+        padding: 60px 0 100px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .container-content-pageHeader-heroShot .text h1{
+        font-weight: 500;
+        text-decoration: solid;
+        color: white;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-content-pageHeader-heroShot .text h3{
+        font-weight: bolder;
+        margin: 0;
+        font-size: 25px;
+        text-decoration: solid;
+    }
+    .container-content-pageHeader-heroShot .text div{
+        margin-top: 15px;
+    }
+    .container-content-pageHeader-heroShot .text div p{
+        margin: 0;
+        margin-top: 3px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    /* end page header & hero shot */
+
+
+    /* highlights-panel */
+    .highlights-panel{
+        padding: 15px;
+        background-color: #e5e5e5;
+        color: rgb(52, 37, 2);
+    }
+    .container-highlights-panel-top{
+        text-align: center;
+    }
+    .container-highlights-panel-top h1{
+        font-weight: 600;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-highlights-panel-top p{
+        margin-top: 15px;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .container-highlights-panel-bottom{
+        padding: 10px 23px 60px 23px;
+        grid-template-columns: auto auto;
+        display: grid;
+        margin-top: 30px;
+    }
+    .container-highlights-panel-bottom h3{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .container-highlights-panel-bottom img{
+        margin-bottom: 20px;
+    }
+    .content-highlights-panel{
+        border: 0.5px solid grey;
+        padding: 16px 23px 16px 23px;
+        margin: auto;
+        width: 70%;
+        height: 80%;
+        margin-top: 30px;
+    }
+    .content-highlights-panel p{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .content-highlights-panel div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-highlights-panel div img{
+        width: 14%;
+    }
+    /* end highlights-panel */
+
+
+    /* page footer */
+    .page-footer{
+        background-color: #004a75;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        padding: 20px 20px 20px 20px;
+        opacity: 0.9;
+    }
+    .page-footer img{
+        width: 2%;
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+    }
+    /* end page footer */
+
+    .br-320px{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:721px) {
+    /* notification panel */
+    .notification-panel{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12.4px;
+        padding: 15px;
+        background-color: #e5e5e5;
+        width: 100%;
+    }
+    .notification-panel div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .notification-panel p{
+        margin: 0;
+        width: 60%;
+        padding: 0;
+    }
+    .notification-panel a{
+        text-decoration: none;
+        color: #007bc1;
+        font-weight: bold;
+    }
+    .notification-panel button{
+        border: none;
+        background-color:  #007bc1;
+        color: #e5e5e5;
+        padding: 6px 12px 6px 12px;
+        border-radius: 4px;
+        height: 100%;
+    }
+    /* end notification-panel */
+
+
+    /* page header & hero shot */
+    .pageHeader-heroShot{
+        height: 100%;
+        background-color: #004a75;
+        background-image: url("./assets/work-desk__dustin-lee.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding-top: 5rem;
+        margin-top: auto;
+    }
+    .pageHeader-heroShot img{
+        width: 50px;
+        margin-top: 20px;
+    }
+    .container-content-pageHeader-heroShot{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 88%;
+    }
+    .container-content-pageHeader-heroShot button{
+        border: 2px solid white;
+        background-color: transparent;
+        color: wheat;
+        padding: 18px 26px 18px 26px;
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+    .container-content-pageHeader-heroShot .text{
+        padding: 60px 0 100px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .container-content-pageHeader-heroShot .text h1{
+        font-weight: 500;
+        text-decoration: solid;
+        color: white;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-content-pageHeader-heroShot .text h3{
+        font-weight: bolder;
+        margin: 0;
+        font-size: 25px;
+        text-decoration: solid;
+    }
+    .container-content-pageHeader-heroShot .text div{
+        margin-top: 15px;
+    }
+    .container-content-pageHeader-heroShot .text div p{
+        margin: 0;
+        margin-top: 3px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    /* end page header & hero shot */
+
+
+    /* highlights-panel */
+    .highlights-panel{
+        padding: 15px;
+        background-color: #e5e5e5;
+        color: rgb(52, 37, 2);
+    }
+    .container-highlights-panel-top{
+        text-align: center;
+    }
+    .container-highlights-panel-top h1{
+        font-weight: 600;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-highlights-panel-top p{
+        margin-top: 15px;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .container-highlights-panel-bottom{
+        padding: 10px 23px 60px 23px;
+        grid-template-columns: auto auto;
+        display: grid;
+        margin-top: 30px;
+    }
+    .container-highlights-panel-bottom h3{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .container-highlights-panel-bottom img{
+        margin-bottom: 20px;
+    }
+    .content-highlights-panel{
+        border: 0.5px solid grey;
+        padding: 16px 23px 16px 23px;
+        margin: auto;
+        width: 70%;
+        height: 80%;
+        margin-top: 30px;
+    }
+    .content-highlights-panel p{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .content-highlights-panel div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-highlights-panel div img{
+        width: 14%;
+    }
+    /* end highlights-panel */
+
+
+    /* page footer */
+    .page-footer{
+        background-color: #004a75;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        padding: 20px 20px 20px 20px;
+        opacity: 0.9;
+    }
+    .page-footer img{
+        width: 2%;
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+    }
+    /* end page footer */
+
+    .br-960px{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width:961px){
+    /* notification panel */
+    .notification-panel{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12.4px;
+        padding: 15px;
+        background-color: #e5e5e5;
+        width: 100%;
+    }
+    .notification-panel div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .notification-panel p{
+        margin: 0;
+        width: 35%;
+        padding: 0;
+        font-size: 13px;
+    }
+    .notification-panel a{
+        text-decoration: none;
+        color: #007bc1;
+        font-weight: bold;
+    }
+    .notification-panel button{
+        border: none;
+        background-color:  #007bc1;
+        color: #e5e5e5;
+        padding: 8px 12px 8px 12px;
+        border-radius: 4px;
+        height: 100%;
+        margin-left: 10px;
+        cursor: pointer;
+        width: 6%;
+    }
+    /* end notification panel */
+
+
+    /* page header & hero shot */
+    .pageHeader-heroShot{
+        height: 100%;
+        background-color: #004a75;
+        background-image: url("./assets/work-desk__dustin-lee.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding-top: 5rem;
+        margin-top: auto;
+        padding-bottom: 3rem;
+    }
+    .pageHeader-heroShot img{
+        position: absolute;
+        width: 50px;
+        margin-top: 20px;
+        left: 40px;
+    }
+    .container-content-pageHeader-heroShot{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 88%;
+        height: 445px;
+    }
+    .container-content-pageHeader-heroShot button{
+        border: 2px solid white;
+        background-color: transparent;
+        color: wheat;
+        padding: 18px 26px 18px 26px;
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+    .container-content-pageHeader-heroShot .text{
+        padding: 60px 0 100px 0;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 70px;
+    }
+    .container-content-pageHeader-heroShot .text .text-content-header{
+        display: flex;
+        justify-content: center;
+    }
+    .container-content-pageHeader-heroShot .text h1{
+        font-weight: 500;
+        text-decoration: solid;
+        color: white;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-content-pageHeader-heroShot .text h3{
+        font-weight: bolder;
+        margin: 0;
+        font-size: 25px;
+        text-decoration: solid;
+    }
+    .container-content-pageHeader-heroShot .text .text-content-text{
+        display: flex;
+        justify-content: center;
+    }
+    .container-content-pageHeader-heroShot .text .text-content-text .mid{
+        margin-left: 5px;
+    }
+    .container-content-pageHeader-heroShot .text div p{
+        margin: 0;
+        margin-top: 3px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    /* end page header & hero shot */
+
+
+    /* highlights-panel */
+    .highlights-panel{
+        padding: 15px;
+        background-color: #e5e5e5;
+        color: rgb(52, 37, 2);
+    }
+
+    .container-highlights-panel-top{
+        text-align: center;
+        margin-top: 80px;
+    }
+    .container-highlights-panel-top h1{
+        font-weight: 600;
+        margin: 0;
+        font-size: 30px;
+    }
+    .container-highlights-panel-top p{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .container-highlights-panel-bottom{
+        /* margin-top: 50px; */
+        padding: 10px 23px 60px 23px;
+        grid-template-columns: auto auto auto;
+        display: grid;
+        margin-top: 30px;
+    }
+    .container-highlights-panel-bottom h3{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .container-highlights-panel-bottom img{
+        margin-bottom: 20px;
+    }
+    .content-highlights-panel{
+        border: 0.5px solid grey;
+        padding: 16px 23px 16px 23px;
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        margin-top: 30px;
+    }
+    .content-highlights-panel p{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .content-highlights-panel div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-highlights-panel div img{
+        width: 14%;
+    }
+    
+    /* end highlights-panel */
+
+
+    /* page footer */
+    .page-footer{
+        background-color: #004a75;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        opacity: 0.9;
+    }
+    .page-footer img{
+        width: 2%;
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+    }
+    /* end page footer */
+
+    .br-320px{
+        display: none;
+    }
+    .br-960px{
+        display: none;
+    }
+
+    /* newsletter-panel */
+    .newsletter-panel{
+        background-color: #2a8bc3;
+        color: white;
+        padding: 20px;
+        z-index: 1;
+        opacity: 0.9;
+        height: auto;
+        width: 500px;
+        visibility: hidden;
+    }
+    .newsletter-panel .newsletter-panel-content{
+        z-index: 10;
+    }
+    .newsletter-panel .newsletter-panel-content h1{
+        font-size: 27px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .newsletter-panel .newsletter-panel-content p{
+        margin-top: 6px;
+    }
+    .newsletter-panel .input-box{
+        display: flex;
+        flex-direction: row;
+        z-index: 10;
+    }
+    .newsletter-panel .input-box .input-value{
+        padding: 6px;
+        margin-bottom: 14px;
+        opacity: 1;
+        width: 70%;
+    }
+    .newsletter-panel .input-box .button{
+        width: 22%;
+        margin-left: 10px;
+        padding: 6px;
+        color: white;
+        background-color: rgb(243, 166, 11);
+        font-weight: 600;
+        opacity: 1;
+        text-align: center;
+        margin-bottom: 14px;
+        cursor: pointer;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(154, 153, 153);
+        font-weight: 600;
+        opacity: 1; /* Firefox */
+      }
+    .newsletter-panel .logo-close{
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        cursor: pointer;
+        /* end newsletter-panel */
+    }
+}
